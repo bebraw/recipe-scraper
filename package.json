@@ -14,5 +14,8 @@
   "dependencies": {
     "require-dir": "~0.1.0",
     "cheerio": "~0.13.1"
+  },
+  "scripts": {
+    "test": "node tests"
   }
 }
