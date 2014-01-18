@@ -16,7 +16,23 @@ module.exports = function() {
             }
 
             assert.deepEqual(d, {
-                name: '\"Pasta\" Primavera'
+                name: '\"Pasta\" Primavera',
+                ingredients: [
+                    'spaghetti squash',
+                    'broccoli',
+                    'zucchini',
+                    'mushroom',
+                    'carrot',
+                    'garlic',
+                    'margarine',
+                    'skim milk',
+                    'ricotta cheese',
+                    'parmesan cheese',
+                    'butter',
+                    'salt',
+                    'italian seasoning',
+                    'pepper'
+                ]
             });
         });
     });
