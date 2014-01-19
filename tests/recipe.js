@@ -1,7 +1,7 @@
 var assert = require('assert');
 var path = require('path');
 var read = require('../lib/file').read;
-var scrape = require('../lib/scrape');
+var scrape = require('../scrapers/recipe');
 
 
 module.exports = function() {
