@@ -6,7 +6,11 @@ module.exports = function(data, cb) {
     var name = $('meta[property="og:title"]').attr('content');
     var ingredients = [];
     $('#Ingredients').parent().next().find('a').each(function(i, el) {
-        ingredients.push($(el).attr('title').toLowerCase());
+        var title = $(el).attr('title');
+
+        if(title) {
+            ingredients.push(title.toLowerCase());
+        }
     });
 
     cb(null, {
