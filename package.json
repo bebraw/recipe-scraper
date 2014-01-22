@@ -4,7 +4,7 @@
   "description": "Scrapes recipes.wikia.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests"
   },
   "keywords": [
     "scraper"
@@ -13,9 +13,10 @@
   "license": "MIT",
   "dependencies": {
     "require-dir": "~0.1.0",
-    "cheerio": "~0.13.1"
-  },
-  "scripts": {
-    "test": "node tests"
+    "cheerio": "~0.13.1",
+    "request": "~2.33.0",
+    "async": "~0.2.9",
+    "change-case": "~1.0.4",
+    "mkdirp": "~0.3.5"
   }
 }

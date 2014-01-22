@@ -1,5 +1,7 @@
 var cheerio = require('cheerio');
 
+var URL_ROOT = 'http://recipes.wikia.com';
+
 
 module.exports = function(data, cb) {
     var $ = cheerio.load(data);
@@ -8,6 +10,8 @@ module.exports = function(data, cb) {
         links.push($(el).find('a').first().attr('href'));
     });
 
-    cb(null, links);
+    cb(null, links.map(function(v) {
+        return URL_ROOT + v;
+    }));
 };
 
